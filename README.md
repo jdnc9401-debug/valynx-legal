@@ -1,1 +1,0 @@
-# valynx-legal
