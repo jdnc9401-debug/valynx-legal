@@ -2,6 +2,25 @@
 layout: home
 title: "Valynx Legal"
 ---
+<style>
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  body, p, li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  ul {
+    margin-top: 1rem;
+  }
+</style>
 
 <script>
   // Detectar idioma del navegador
