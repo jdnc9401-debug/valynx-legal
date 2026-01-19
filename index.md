@@ -23,21 +23,16 @@ title: "Valynx Legal"
 </style>
 
 <script>
-  // Detectar idioma del navegador
   const lang = navigator.language || navigator.userLanguage;
-
-  // Normalizar a dos letras
   const short = lang.substring(0, 2).toLowerCase();
-
-  // Idiomas soportados
   const supported = ["es", "en", "fr", "de", "pt", "it"];
 
-  // Si el idioma está soportado, redirigir
+  const base = "/valynx-legal";
+
   if (supported.includes(short)) {
-    window.location.href = `/${short}/privacy.html`;
+    window.location.href = `${base}/${short}/privacy.html`;
   } else {
-    // Fallback a inglés
-    window.location.href = "/en/privacy.html";
+    window.location.href = `${base}/en/privacy.html`;
   }
 </script>
 
