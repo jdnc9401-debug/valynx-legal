@@ -1,5 +1,5 @@
 --- 
-layout: page 
+layout: legal
 title: "Política de Privacidad"
 ---
 # Política de Privacidad – Valynx
