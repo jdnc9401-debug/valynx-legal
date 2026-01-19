@@ -9,7 +9,7 @@ Bienvenido a la sección legal de Valynx. Aquí puedes consultar los Términos y
 
 ## 🌍 Selecciona tu idioma:
 
-- 🇪🇸 [Español](valynx-legal/es/privacy.html)
+- 🇪🇸 [Español](/es/privacy.html)
 - 🇬🇧 [English](valynx-legal/en/privacy.html)
 - 🇫🇷 [Français](valynx-legal/fr/privacy.html)
 - 🇩🇪 [Deutsch](valynx-legal/de/privacy.html)
