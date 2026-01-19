@@ -23,16 +23,22 @@ title: "Valynx Legal"
 </style>
 
 <script>
-  const lang = navigator.language || navigator.userLanguage;
-  const short = lang.substring(0, 2).toLowerCase();
-  const supported = ["es", "en", "fr", "de", "pt", "it"];
+  const params = new URLSearchParams(window.location.search);
 
-  const base = "/valynx-legal";
-
-  if (supported.includes(short)) {
-    window.location.href = `${base}/${short}/privacy.html`;
+  // Si viene desde "Volver al inicio", NO redirigir
+  if (params.get("from") === "legal") {
+    console.log("Vista del index sin redirección");
   } else {
-    window.location.href = `${base}/en/privacy.html`;
+    const lang = navigator.language || navigator.userLanguage;
+    const short = lang.substring(0, 2).toLowerCase();
+    const supported = ["es", "en", "fr", "de", "pt", "it"];
+    const base = "/valynx-legal";
+
+    if (supported.includes(short)) {
+      window.location.href = `${base}/${short}/privacy.html`;
+    } else {
+      window.location.href = `${base}/en/privacy.html`;
+    }
   }
 </script>
 
