@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{ page.lang | default: 'es' }}">
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }} – Valynx Legal</title>
@@ -53,10 +53,40 @@
     .back-link:hover {
       text-decoration: underline;
     }
+
+    .lang-menu {
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+      font-size: 1rem;
+    }
+
+    .lang-menu a {
+      margin-right: 12px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 600;
+    }
+
+    .lang-menu a.active {
+      color: #000;
+      text-decoration: underline;
+    }
   </style>
 </head>
 
 <body>
+
+  <!-- Menú de idiomas -->
+  <div class="lang-menu">
+    {% assign current = page.lang %}
+    <a href="/valynx-legal/es/privacy.html" class="{% if current == 'es' %}active{% endif %}">ES</a>
+    <a href="/valynx-legal/en/privacy.html" class="{% if current == 'en' %}active{% endif %}">EN</a>
+    <a href="/valynx-legal/fr/privacy.html" class="{% if current == 'fr' %}active{% endif %}">FR</a>
+    <a href="/valynx-legal/de/privacy.html" class="{% if current == 'de' %}active{% endif %}">DE</a>
+    <a href="/valynx-legal/pt/privacy.html" class="{% if current == 'pt' %}active{% endif %}">PT</a>
+    <a href="/valynx-legal/it/privacy.html" class="{% if current == 'it' %}active{% endif %}">IT</a>
+  </div>
 
   <h1>{{ page.title }}</h1>
 
