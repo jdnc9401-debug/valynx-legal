@@ -48,12 +48,12 @@ Bienvenido a la sección legal de Valynx. Si no eres redirigido automáticamente
 
 ## 🌍 Selecciona tu idioma:
 
-- 🇪🇸 [Español](/es/privacy.html)
-- 🇬🇧 [English](/en/privacy.html)
-- 🇫🇷 [Français](/fr/privacy.html)
-- 🇩🇪 [Deutsch](/de/privacy.html)
-- 🇵🇹 [Português](/pt/privacy.html)
-- 🇮🇹 [Italiano](/it/privacy.html)
+- 🇪🇸 [Español](/valynx-legal/es/privacy.html)
+- 🇬🇧 [English](/valynx-legal/en/privacy.html)
+- 🇫🇷 [Français](/valynx-legal/fr/privacy.html)
+- 🇩🇪 [Deutsch](/valynx-legal/de/privacy.html)
+- 🇵🇹 [Português](/valynx-legal/pt/privacy.html)
+- 🇮🇹 [Italiano](/valynx-legal/it/privacy.html)
 
 ---
 
