@@ -1,5 +1,6 @@
 --- 
-layout: page title: "Política de Privacidad"
+layout: page 
+title: "Política de Privacidad"
 ---
 # Política de Privacidad – Valynx
 Última actualización: 2026
