@@ -1,6 +1,7 @@
 --- 
 layout: legal
 title: "Política de Privacidad"
+lang: es
 ---
 # Política de Privacidad – Valynx
 Última actualización: 2026
@@ -24,5 +25,5 @@ Puede eliminar todos sus datos en cualquier momento simplemente desinstalando la
 
 ## Contacto
 valynxsolutions@outlook.com
-[🏠 Volver al inicio](/valynx-legal/)
+
 
