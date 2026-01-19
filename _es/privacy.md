@@ -24,4 +24,5 @@ Puede eliminar todos sus datos en cualquier momento simplemente desinstalando la
 
 ## Contacto
 valynxsolutions@outlook.com
+[🏠 Volver al inicio](/valynx-legal/)
 
