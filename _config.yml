@@ -1,5 +1,5 @@
 theme: minima
-**Commit new file**
+
 collections:
   es:
     output: true
@@ -16,7 +16,6 @@ collections:
   pt:
     output: true
     permalink: /pt/:name.html
- it:
+  it:
     output: true
     permalink: /it/:name.html
-
