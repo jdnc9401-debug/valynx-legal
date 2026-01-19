@@ -1,22 +1,23 @@
-# Política de Privacidad – Valynx
-Última actualización: 2026
+---
+layout: home
+title: "Valynx Legal"
+---
 
-Tu privacidad es importante para nosotros.
-## 1. DATOS QUE RECOPILAMOS
+# Valynx – Documentación Legal
 
-Recopilamos información que usted ingresa voluntariamente: nombre, moneda, ingresos y gastos. Estos datos se almacenan localmente en su dispositivo mediante una base de datos SQLite.
+Bienvenido a la sección legal de Valynx. Aquí puedes consultar los Términos y Condiciones y la Política de Privacidad en tu idioma.
 
-## 2. SERVICIOS DE TERCEROS
+## 🌍 Selecciona tu idioma:
 
-Utilizamos Google Play Billing y Apple In-App Purchases para procesar pagos. Estas plataformas tienen sus propias políticas de privacidad.
+- 🇪🇸 [Español](/es/privacy.html)
+- 🇬🇧 [English](/en/privacy.html)
+- 🇫🇷 [Français](/fr/privacy.html)
+- 🇩🇪 [Deutsch](/de/privacy.html)
+- 🇵🇹 [Português](/pt/privacy.html)
+- 🇮🇹 [Italiano](/it/privacy.html)
 
-## 3. SEGURIDAD
+---
 
-Sus datos están protegidos por el PIN y la biometría que usted configure. Los respaldos que usted genere son de su exclusiva responsabilidad.
+📧 Para cualquier consulta legal, puedes escribirnos a:  
+**valynxsolutions@outlook.com**
 
-## 4. SUS DERECHOS
-
-Puede eliminar todos sus datos en cualquier momento simplemente desinstalando la aplicación o utilizando la opción de eliminar base de datos si está disponible.
-
-## Contacto
-valynxsolutions@outlook.com
