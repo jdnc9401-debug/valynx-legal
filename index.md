@@ -24,18 +24,24 @@ title: "Valynx Legal"
 
 <script>
   const params = new URLSearchParams(window.location.search);
+  const base = "/valynx-legal";
 
-  // Si viene desde "Volver al inicio", NO redirigir
-  if (params.get("from") === "legal") {
-    console.log("Vista del index sin redirección");
-  } else {
-    const lang = navigator.language || navigator.userLanguage;
-    const short = lang.substring(0, 2).toLowerCase();
+  // 1. Si la app envía ?lang=xx → redirigir directamente
+  if (params.has("lang")) {
+    const lang = params.get("lang").toLowerCase();
+    window.location.href = `${base}/${lang}/privacy.html`;
+  } 
+  // 2. Si vienes desde "Volver al inicio" → no redirigir
+  else if (params.has("from")) {
+    console.log("Mostrando index sin redirección");
+  } 
+  // 3. Si entras desde navegador → autodetección normal
+  else {
+    const lang = navigator.language.substring(0, 2).toLowerCase();
     const supported = ["es", "en", "fr", "de", "pt", "it"];
-    const base = "/valynx-legal";
 
-    if (supported.includes(short)) {
-      window.location.href = `${base}/${short}/privacy.html`;
+    if (supported.includes(lang)) {
+      window.location.href = `${base}/${lang}/privacy.html`;
     } else {
       window.location.href = `${base}/en/privacy.html`;
     }
