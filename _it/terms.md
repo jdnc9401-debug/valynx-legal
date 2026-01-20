@@ -2,6 +2,7 @@
 layout: legal
 title: "Termini e Condizioni"
 lang: it
+doc: terms
 ---
 # Termini e Condizioni di Valynx
 
