@@ -1,3 +1,8 @@
+---
+layout: legal 
+title: "Términos y Condiciones"
+lang: es 
+---
 Términos y Condiciones
 Última actualización: 19 de enero de 2026
 Por favor, lea atentamente estos términos y condiciones antes de utilizar nuestro Servicio.
