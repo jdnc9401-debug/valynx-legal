@@ -2,6 +2,7 @@
 layout: legal
 title: "Datenschutzrichtlinie"
 lang: de
+doc: privacy
 ---
 # Valynx Datenschutzerklärung
 
