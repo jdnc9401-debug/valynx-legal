@@ -114,7 +114,9 @@
     {% assign back_text = "🏠 Back to home" %}
 {% endcase %}
 
-<a class="back-link" href="/valynx-legal/?from=legal&doc={{ page.doc }}">{{ back_text }}</a>
+<a class="back-link" href="/valynx-legal/{{ page.lang }}/index.html?doc={{ page.doc }}">
+  {{ back_text }}
+</a>
 
   <div class="footer">
     © {{ "now" | date: "%Y" }} Valynx. Todos los derechos reservados.
