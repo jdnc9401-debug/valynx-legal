@@ -2,6 +2,7 @@
 layout: legal
 title: "Conditions Générales"
 lang: fr
+doc: terms
 ---
 # Conditions Générales d'Utilisation de Valynx
 
