@@ -1,6 +1,6 @@
---- 
+---
 layout: legal
-title: "Política de Privacidad"
+title: "Privacy Policy"
 lang: en
 ---
 # Valynx Privacy Policy
