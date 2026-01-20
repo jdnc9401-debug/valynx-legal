@@ -2,6 +2,7 @@
 layout: legal 
 title: "Términos y Condiciones"
 lang: es 
+doc: terms
 ---
 Términos y Condiciones
 Última actualización: 19 de enero de 2026
