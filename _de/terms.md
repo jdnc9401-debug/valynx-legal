@@ -2,6 +2,7 @@
 layout: legal
 title: "Allgemeine Geschäftsbedingungen"
 lang: de
+doc: terms
 ---
 # Allgemeine Geschäftsbedingungen von Valynx
 
