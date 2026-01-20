@@ -26,16 +26,17 @@ title: "Valynx Legal"
   const params = new URLSearchParams(window.location.search);
   const base = "/valynx-legal";
 
-  // 1. Si la app envía ?lang=xx → redirigir directamente
-  if (params.has("lang")) {
+  // Si la app envía ?lang=xx&doc=yy → redirigir al documento correcto
+  if (params.has("lang") && params.has("doc")) {
     const lang = params.get("lang").toLowerCase();
-    window.location.href = `${base}/${lang}/privacy.html`;
-  } 
-  // 2. Si vienes desde "Volver al inicio" → no redirigir
+    const doc = params.get("doc").toLowerCase(); // "privacy" o "terms"
+    window.location.href = `${base}/${lang}/${doc}.html`;
+  }
+  // Si vienes desde "Volver al inicio" → no redirigir
   else if (params.has("from")) {
     console.log("Mostrando index sin redirección");
-  } 
-  // 3. Si entras desde navegador → autodetección normal
+  }
+  // Si entras desde navegador → autodetección normal
   else {
     const lang = navigator.language.substring(0, 2).toLowerCase();
     const supported = ["es", "en", "fr", "de", "pt", "it"];
@@ -47,6 +48,7 @@ title: "Valynx Legal"
     }
   }
 </script>
+
 
 # Valynx – Documentación Legal
 
