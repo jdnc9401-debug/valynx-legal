@@ -2,6 +2,7 @@
 layout: legal
 title: "Informativa sulla Privacy"
 lang: it
+doc: privacy
 ---
 # Informativa sulla Privacy di Valynx
 
