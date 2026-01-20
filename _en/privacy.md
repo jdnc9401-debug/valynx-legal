@@ -1,3 +1,8 @@
+--- 
+layout: legal
+title: "Política de Privacidad"
+lang: en
+---
 Valynx Privacy Policy
 
 Last updated: January 19, 2026
