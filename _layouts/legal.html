@@ -78,15 +78,18 @@
 <body>
 
   <!-- Menú de idiomas -->
-  <div class="lang-menu">
-    {% assign current = page.lang %}
-    <a href="/valynx-legal/es/privacy.html" class="{% if current == 'es' %}active{% endif %}">ES</a>
-    <a href="/valynx-legal/en/privacy.html" class="{% if current == 'en' %}active{% endif %}">EN</a>
-    <a href="/valynx-legal/fr/privacy.html" class="{% if current == 'fr' %}active{% endif %}">FR</a>
-    <a href="/valynx-legal/de/privacy.html" class="{% if current == 'de' %}active{% endif %}">DE</a>
-    <a href="/valynx-legal/pt/privacy.html" class="{% if current == 'pt' %}active{% endif %}">PT</a>
-    <a href="/valynx-legal/it/privacy.html" class="{% if current == 'it' %}active{% endif %}">IT</a>
-  </div>
+<div class="lang-menu">
+  {% assign current = page.lang %}
+  {% assign doc = page.doc | default: "privacy" %}
+
+  <a href="/valynx-legal/es/{{ doc }}.html" class="{% if current == 'es' %}active{% endif %}">ES</a>
+  <a href="/valynx-legal/en/{{ doc }}.html" class="{% if current == 'en' %}active{% endif %}">EN</a>
+  <a href="/valynx-legal/fr/{{ doc }}.html" class="{% if current == 'fr' %}active{% endif %}">FR</a>
+  <a href="/valynx-legal/de/{{ doc }}.html" class="{% if current == 'de' %}active{% endif %}">DE</a>
+  <a href="/valynx-legal/pt/{{ doc }}.html" class="{% if current == 'pt' %}active{% endif %}">PT</a>
+  <a href="/valynx-legal/it/{{ doc }}.html" class="{% if current == 'it' %}active{% endif %}">IT</a>
+</div>
+
 
   <h1>{{ page.title }}</h1>
 
