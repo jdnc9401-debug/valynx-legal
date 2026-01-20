@@ -26,17 +26,17 @@ title: "Valynx Legal"
   const params = new URLSearchParams(window.location.search);
   const base = "/valynx-legal";
 
-  // Si la app envía ?lang=xx&doc=yy → redirigir al documento correcto
+  // Si la app o el enlace envía ?lang=xx&doc=yy → redirigir al documento correcto
   if (params.has("lang") && params.has("doc")) {
     const lang = params.get("lang").toLowerCase();
     const doc = params.get("doc").toLowerCase(); // "privacy" o "terms"
     window.location.href = `${base}/${lang}/${doc}.html`;
   }
-  // Si vienes desde "Volver al inicio" → no redirigir
+  // Si vienes desde "Volver al inicio" sin doc → no redirigir
   else if (params.has("from")) {
     console.log("Mostrando index sin redirección");
   }
-  // Si entras desde navegador → autodetección normal
+  // Si entras desde navegador → autodetección normal (privacy por defecto)
   else {
     const lang = navigator.language.substring(0, 2).toLowerCase();
     const supported = ["es", "en", "fr", "de", "pt", "it"];
@@ -54,14 +54,14 @@ title: "Valynx Legal"
 
 Bienvenido a la sección legal de Valynx. Si no eres redirigido automáticamente, selecciona tu idioma:
 
-## 🌍 Selecciona tu idioma:
+### 🌐 Selecciona tu idioma:
 
-- 🇪🇸 [Español](/valynx-legal/es/privacy.html)
-- 🇬🇧 [English](/valynx-legal/en/privacy.html)
-- 🇫🇷 [Français](/valynx-legal/fr/privacy.html)
-- 🇩🇪 [Deutsch](/valynx-legal/de/privacy.html)
-- 🇵🇹 [Português](/valynx-legal/pt/privacy.html)
-- 🇮🇹 [Italiano](/valynx-legal/it/privacy.html)
+- 🇪🇸 [Español](/valynx-legal/?lang=es&doc={{ params.doc | default: "privacy" }})
+- 🇬🇧 [English](/valynx-legal/?lang=en&doc={{ params.doc | default: "privacy" }})
+- 🇫🇷 [Français](/valynx-legal/?lang=fr&doc={{ params.doc | default: "privacy" }})
+- 🇩🇪 [Deutsch](/valynx-legal/?lang=de&doc={{ params.doc | default: "privacy" }})
+- 🇵🇹 [Português](/valynx-legal/?lang=pt&doc={{ params.doc | default: "privacy" }})
+- 🇮🇹 [Italiano](/valynx-legal/?lang=it&doc={{ params.doc | default: "privacy" }})
 
 ---
 
