@@ -1,8 +1,9 @@
---- 
+---
 layout: legal
-title: "Política de Privacidad"
+title: "Politique de Confidentialité"
 lang: fr
 ---
+
 # Politique de Confidentialité de Valynx
 
 **Dernière mise à jour : 19 janvier 2026**
