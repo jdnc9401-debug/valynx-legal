@@ -1,3 +1,8 @@
+--- 
+layout: legal
+title: "Política de Privacidad"
+lang: de
+---
 # Valynx Datenschutzerklärung
 
 **Letzte Aktualisierung: 19. Januar 2026**
