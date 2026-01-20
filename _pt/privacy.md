@@ -2,6 +2,7 @@
 layout: legal
 title: "Política de Privacidade"
 lang: pt
+doc: privacy
 ---
 # Política de Privacidade do Valynx
 
