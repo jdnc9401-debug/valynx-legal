@@ -92,7 +92,26 @@
 
   {{ content }}
 
- <a class="back-link" href="/valynx-legal/?from=legal&doc={{ page.doc }}">🏠 Volver al inicio</a>
+ {% assign back_text = "" %}
+
+{% case page.lang %}
+  {% when "es" %}
+    {% assign back_text = "🏠 Volver al inicio" %}
+  {% when "en" %}
+    {% assign back_text = "🏠 Back to home" %}
+  {% when "fr" %}
+    {% assign back_text = "🏠 Retour à l’accueil" %}
+  {% when "de" %}
+    {% assign back_text = "🏠 Zur Startseite" %}
+  {% when "pt" %}
+    {% assign back_text = "🏠 Voltar ao início" %}
+  {% when "it" %}
+    {% assign back_text = "🏠 Torna alla home" %}
+  {% else %}
+    {% assign back_text = "🏠 Back to home" %}
+{% endcase %}
+
+<a class="back-link" href="/valynx-legal/?from=legal&doc={{ page.doc }}">{{ back_text }}</a>
 
   <div class="footer">
     © {{ "now" | date: "%Y" }} Valynx. Todos los derechos reservados.
