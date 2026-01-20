@@ -1,6 +1,6 @@
---- 
+---
 layout: legal
-title: "Política de Privacidad"
+title: "Datenschutzrichtlinie"
 lang: de
 ---
 # Valynx Datenschutzerklärung
