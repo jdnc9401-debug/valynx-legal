@@ -72,6 +72,7 @@ Bienvenido a la sección legal de Valynx. Si no eres redirigido automáticamente
 - 🇩🇪 [Deutsch](/valynx-legal/?lang=de&doc={{ params.doc | default: "privacy" }})
 - 🇵🇹 [Português](/valynx-legal/?lang=pt&doc={{ params.doc | default: "privacy" }})
 - 🇮🇹 [Italiano](/valynx-legal/?lang=it&doc={{ params.doc | default: "privacy" }})
+- 
 
 ---
 
