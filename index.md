@@ -26,28 +26,38 @@ title: "Valynx Legal"
   const params = new URLSearchParams(window.location.search);
   const base = "/valynx-legal";
 
-  // Si la app o el enlace envía ?lang=xx&doc=yy → redirigir al documento correcto
+  // Si la app o un enlace envía ?lang=xx&doc=yy → redirigir al documento correcto
   if (params.has("lang") && params.has("doc")) {
     const lang = params.get("lang").toLowerCase();
     const doc = params.get("doc").toLowerCase(); // "privacy" o "terms"
     window.location.href = `${base}/${lang}/${doc}.html`;
   }
-  // Si vienes desde "Volver al inicio" sin doc → no redirigir
+
+  // Si vienes desde "Volver al inicio" → NO redirigir automáticamente
   else if (params.has("from")) {
-    console.log("Mostrando index sin redirección");
+    console.log("Mostrando index sin redirección automática");
   }
-  // Si entras desde navegador → autodetección normal (privacy por defecto)
+
+  // Si viene solo ?doc=privacy o ?doc=terms → autodetectar idioma y redirigir
+  else if (params.has("doc")) {
+    const doc = params.get("doc").toLowerCase();
+    const lang = navigator.language.substring(0, 2).toLowerCase();
+    const supported = ["es", "en", "fr", "de", "pt", "it"];
+    const finalLang = supported.includes(lang) ? lang : "en";
+
+    window.location.href = `${base}/${finalLang}/${doc}.html`;
+  }
+
+  // Si no hay parámetros → autodetección normal (privacy por defecto)
   else {
     const lang = navigator.language.substring(0, 2).toLowerCase();
     const supported = ["es", "en", "fr", "de", "pt", "it"];
+    const finalLang = supported.includes(lang) ? lang : "en";
 
-    if (supported.includes(lang)) {
-      window.location.href = `${base}/${lang}/privacy.html`;
-    } else {
-      window.location.href = `${base}/en/privacy.html`;
-    }
+    window.location.href = `${base}/${finalLang}/privacy.html`;
   }
 </script>
+
 
 
 # Valynx – Documentación Legal
