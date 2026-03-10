@@ -6,4 +6,6 @@ If you need help with the app, you can contact us at:
 
 We usually respond within 48 hours.
 
-
+For legal information:
+- [Privacy Policy](./_en/privacy.md)
+- [Terms and Conditions](./_en/terms.md)
